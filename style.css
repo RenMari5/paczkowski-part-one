@@ -19,10 +19,31 @@ footer {
 
 .location {
     background-color: #70a48b;
+    border-radius: 10px;
+    border: 2px solid #1f211c;
+    padding: 20px;
+    width: 200px;
+    height: 30px;
+    font-weight: 600;    
 }
 
 #donation {
     background-color: #1f211c;
+    border-radius: 10px;
+    border: 2px solid #1f211c;
+    padding: 20px;
+    width: 150px;
+    height: 15px;
+    font-weight: 600;
+}
+
+.nav-list {
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 20px;
+    width: 200px;
+    height: 60px;
+
 }
 
 main {
@@ -31,4 +52,8 @@ main {
 
 img {
     border-radius: 10px;
+}
+
+@media screen and (min-width: 768px){
+    
 }
