@@ -7,9 +7,15 @@ body {
 
 header {
     background-color: #70a48b;
-    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-flow: row wrap;
+}
+
+section {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 footer {
@@ -39,15 +45,14 @@ footer {
     border-radius: 10px;
     border: 2px solid white;
     padding: 20px;
-    width: 390px;
-    height: 23px; 
+    width: 350px;
+    height: 25px; 
     list-style-type: none; 
 } 
 
 .nav-list li {
     display: inline;
-    padding: 10px;
-    margin: auto;
+    padding: 15px 10px;
     margin-right: .5em;
 }
 
@@ -56,12 +61,13 @@ a {
     text-decoration: none;
 }
 
-button {
-    background-color: black;
-    padding: 12px 28px;
+#button {
     border-radius: 10px;
-    border: #1f211c;
+    border: solid #1f211c;
+    background-color: black;
+    padding: 10px;
     font-weight: 600;
+    font-size: smaller;
 }
 
 main {
@@ -72,16 +78,8 @@ ul {
     padding: 0;
 }
 
-.info-list {
-    float: left;
-}
-
 .info {
     float: left;
-}
-
-.pet-pics {
-    clear: left;
 }
 
 .location-list {
@@ -94,19 +92,66 @@ img {
 }
 
 .images-container {
+    height: 640px;
+    width: 420px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
 }
 
-@media screen and (min-width: 768px) {
-    
+img {
+    align-self: center;
 }
 
-header {
-    padding: 0em 1em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 64px;
+}
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 64px;            
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .side-by-side-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .side-by-side-item1 {
+        width: 33.33%;
+    }
+
+    .side-by-side-item2 {
+        width: 66.67%;
+    }
+
+    .images-container {
+        height: 420px;
+        width: 640px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    img {
+        align-self: center;
+    }
+
 }
